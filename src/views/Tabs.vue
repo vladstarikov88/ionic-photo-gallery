@@ -3,19 +3,14 @@
     <ion-content>
       <ion-tabs>
         <ion-tab-bar slot="bottom">
-          <ion-tab-button tab="tab1" href="/tabs/tab1">
-            <ion-icon :icon="triangle" />
-            <ion-label>Tab 1</ion-label>
-          </ion-tab-button>
-            
           <ion-tab-button tab="tab2" href="/tabs/tab2">
             <ion-icon :icon="images" />
             <ion-label>Photos</ion-label>
           </ion-tab-button>
           
-          <ion-tab-button tab="tab3" href="/tabs/tab3">
-            <ion-icon :icon="square" />
-            <ion-label>Tab 3</ion-label>
+          <ion-tab-button tab="qr-scanner" href="/tabs/qr-scanner">
+            <ion-icon :icon="qrCodeOutline" />
+            <ion-label>QR scanner</ion-label>
           </ion-tab-button>
         </ion-tab-bar>
       </ion-tabs>
@@ -25,7 +20,7 @@
 
 <script lang="ts">
 import { IonTabBar, IonTabButton, IonTabs, IonContent, IonLabel, IonIcon, IonPage } from '@ionic/vue';
-import { images, square, triangle } from 'ionicons/icons';
+import { images, square, triangle, qrCodeOutline } from 'ionicons/icons';
 
 export default {
   name: 'Tabs',
@@ -35,6 +30,7 @@ export default {
       images, 
       square, 
       triangle,
+      qrCodeOutline,
     }
   }
 }
